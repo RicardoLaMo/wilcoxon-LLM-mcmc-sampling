@@ -24,8 +24,14 @@ The notebook demonstrates how **MCMC-based power sampling** can extract better r
 - Sample size recommendations for study design
 
 ### 📊 Visualizations (Extensive!)
+- **Token-Level Analysis** (NEW!):
+  - Token-by-token log probability breakdown
+  - Cumulative log-prob evolution
+  - MCMC acceptance mechanism step-by-step
+  - Pass@k formula and interpretation
+  - Power distribution visualization (β effect)
 - **MCMC Diagnostics**: Convergence plots, trace plots, acceptance rates
-- **Distribution Comparisons**: Log-probability distributions, box plots, histograms
+- **Distribution Comparisons**: Log-probability distributions, box plots, histograms, violin plots
 - **Beta Parameter Effects**: Quality vs acceptance trade-offs
 - **Statistical Test Results**: 4-panel Wilcoxon test visualization
 - **Power Analysis Suite**:
@@ -40,7 +46,7 @@ The notebook demonstrates how **MCMC-based power sampling** can extract better r
 - **Power Heatmaps**: Interactive sample size × effect size grids with contours
 - **Pass@k Performance**: Comparative performance across k values
 
-**Total:** 6 high-resolution publication-ready figures with 20+ individual plots
+**Total:** 7 high-resolution publication-ready figures with 30+ individual plots
 
 ### 🧮 Implementations
 - Mock LLM for demonstration (easily replaceable with real models)
@@ -112,6 +118,14 @@ See `requirements.txt` for complete list.
 - Log-probability comparisons
 - Convergence visualization
 
+### 4.5. Token-Level Analysis and Key Metrics (NEW!)
+- **Token-by-token log probabilities**: Visualize contribution of each token
+- **MCMC acceptance mechanism**: Step-by-step explanation with concrete example
+- **Pass@k metric**: Detailed formula and practical interpretation
+- **Power distribution effect**: Visual demonstration of β parameter
+- Comprehensive 7-panel educational figure
+- Real Math 500 problem walkthrough
+
 ### 5. Beta Parameter Study
 - Effects of different β values (1.0, 1.5, 2.0, 3.0, 5.0)
 - Trade-offs: sample quality vs acceptance rate
@@ -137,12 +151,13 @@ See `requirements.txt` for complete list.
 
 ### 8. Visualizations & Results
 All generated plots:
-- `mcmc_sampling_analysis.png`: MCMC convergence and sampling comparison
-- `beta_parameter_effect.png`: Beta parameter effects on quality and acceptance
-- `wilcoxon_test_results.png`: Statistical comparison with 4-panel analysis
-- `power_analysis_comprehensive.png`: Type I/II error validation and power heatmap (NEW!)
-- `power_analysis_detailed.png`: Enhanced 8-panel comprehensive power analysis (NEW!)
-- `passk_analysis.png`: Pass@k performance comparison
+- `mcmc_sampling_analysis.png`: MCMC convergence and sampling comparison (4 panels)
+- `key_metrics_explained.png`: Token-level analysis and key metrics from the paper (7 panels, NEW!)
+- `beta_parameter_effect.png`: Beta parameter effects on quality and acceptance (2 panels)
+- `wilcoxon_test_results.png`: Statistical comparison with detailed analysis (4 panels)
+- `power_analysis_comprehensive.png`: Type I/II error validation and power heatmap (4 panels, NEW!)
+- `power_analysis_detailed.png`: Enhanced comprehensive power analysis (8 panels, NEW!)
+- `passk_analysis.png`: Pass@k performance comparison (1 panel)
 
 ### 9. Export & Summary
 - CSV exports for further analysis
