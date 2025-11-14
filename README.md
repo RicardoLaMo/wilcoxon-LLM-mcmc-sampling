@@ -23,15 +23,24 @@ The notebook demonstrates how **MCMC-based power sampling** can extract better r
 - Multiple beta parameter exploration
 - Sample size recommendations for study design
 
-### 📊 Visualizations
-- MCMC convergence plots
-- Log-probability distributions
-- Acceptance rate tracking
-- Beta parameter effects
-- Statistical test results
-- Type I error rate validation plots
-- Power curves (power vs effect size)
-- Power heatmaps (sample size × effect size)
+### 📊 Visualizations (Extensive!)
+- **MCMC Diagnostics**: Convergence plots, trace plots, acceptance rates
+- **Distribution Comparisons**: Log-probability distributions, box plots, histograms
+- **Beta Parameter Effects**: Quality vs acceptance trade-offs
+- **Statistical Test Results**: 4-panel Wilcoxon test visualization
+- **Power Analysis Suite**:
+  - Type I error validation with confidence intervals
+  - p-value distribution under null hypothesis
+  - Power curves for multiple sample sizes
+  - Sample size requirements chart
+  - Power vs Type II error comparison
+  - Statistical decision outcomes matrix
+  - Effect size interpretation (Cohen's d distributions)
+  - Comprehensive summary statistics
+- **Power Heatmaps**: Interactive sample size × effect size grids with contours
+- **Pass@k Performance**: Comparative performance across k values
+
+**Total:** 6 high-resolution publication-ready figures with 20+ individual plots
 
 ### 🧮 Implementations
 - Mock LLM for demonstration (easily replaceable with real models)
@@ -128,11 +137,12 @@ See `requirements.txt` for complete list.
 
 ### 8. Visualizations & Results
 All generated plots:
-- `mcmc_sampling_analysis.png`: MCMC convergence
-- `beta_parameter_effect.png`: Beta parameter effects
-- `wilcoxon_test_results.png`: Statistical comparison
-- `power_analysis_comprehensive.png`: Type I/II error and power analysis (NEW!)
-- `passk_analysis.png`: Pass@k performance
+- `mcmc_sampling_analysis.png`: MCMC convergence and sampling comparison
+- `beta_parameter_effect.png`: Beta parameter effects on quality and acceptance
+- `wilcoxon_test_results.png`: Statistical comparison with 4-panel analysis
+- `power_analysis_comprehensive.png`: Type I/II error validation and power heatmap (NEW!)
+- `power_analysis_detailed.png`: Enhanced 8-panel comprehensive power analysis (NEW!)
+- `passk_analysis.png`: Pass@k performance comparison
 
 ### 9. Export & Summary
 - CSV exports for further analysis
